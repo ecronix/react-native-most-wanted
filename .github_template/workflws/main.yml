@@ -1,0 +1,54 @@
+name: Publish Package to npmjs
+on:
+  push:
+    branches:
+      - main
+jobs:
+  publish_package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20.x"
+          registry-url: "https://registry.npmjs.org"
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  publish_android_app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: "11"
+          distribution: "adopt"
+
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Run npm Install
+        run: |
+          cd ./template
+          npm i
+          npm i -g firebase-tools
+      - name: Build application
+        run: |
+          cd ./template/android
+          ./gradlew assembleRelease
+      - name: Publish to Firebase
+        run: |
+          cd ./template/android
+          firebase appdistribution:distribute "app/build/outputs/apk/release/app-release.apk" --app $APP_ID --groups "$GROUPS" --token $FIREBASE_TOKEN
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          APP_ID: ${{ secrets.APP_ID }}
+          GROUPS: ${{ secrets.GROUPS }}
