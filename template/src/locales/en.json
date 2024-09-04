@@ -1,0 +1,51 @@
+{
+  "general": {
+    "welcome": "Wlecome",
+    "profile": "Profile",
+    "settings": "Settings",
+    "en_locale": "English",
+    "de_locale": "German",
+    "home_screen": "Home",
+    "home_navigation": "Home Navigation",
+    "favorites_screen": "Favorites",
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up",
+    "sign_out": "Sign Out",
+    "email": "E-Mail",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "error_title":"Ups! Something went wrong",
+    "add_favorite_title": "Add favorite",
+    "add_favorite": "Add",
+    "delete_favorite_title": "Delete",
+    "delete_favorite_message": "Delete favorite?",
+    "confirm_delete": "Delete",
+    "cancel": "Cancel"
+
+  },  
+  "settings":{
+    "change_language": "Change language",
+    "current_language": "Current language",
+    "change_environment": "Change environment",
+    "current_environment": "Current environment",
+     "language": "Language",
+    "environment": "Environment",
+    "dark_mode": "Dark mode",
+    "check_update": "Check for updates"
+
+  },
+  "home":{
+    "toast_title": "Toast",
+    "toast_message": "This is a Toast"
+  },
+  "modals":{
+    "environmentPin":{
+      "title": "Enter PIN"
+    },
+    "update":{
+      "title": "Update available",
+      "update": "Update now",
+      "update_later": "Update later"
+    }
+  }
+}

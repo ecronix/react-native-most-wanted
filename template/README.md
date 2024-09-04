@@ -85,7 +85,7 @@ React native template
 This template is used to initialize new RN projects
 
 Command to start a new project:
-npx react-native init ProjectName --template rnmw --pm npm
+`npx @react-native-community/cli@latest init AwesomeProject --template rnmw --pm npm`
 
 Used resources:
 
