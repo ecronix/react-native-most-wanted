@@ -66,3 +66,15 @@ https://developers.google.com/android-publisher
 https://github.com/r0adkll/upload-google-play
 https://github.com/googleapis/google-api-nodejs-client
 https://github.com/studioLaCosaNostra/publish-aab-google-play
+
+## Sponsors
+
+We would like to thank our main sponsor:
+
+### Acid21 GmbH
+
+![Acid21 GmbH Logo](https://path-to-acid21-logo.png)
+
+Acid21 GmbH has been instrumental in supporting the development of this template. We appreciate their commitment to open-source projects and the React Native community.
+
+[Visit Acid21 GmbH](https://www.acid21.com)
