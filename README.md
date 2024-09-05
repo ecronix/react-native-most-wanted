@@ -73,7 +73,7 @@ We would like to thank our main sponsor:
 
 ### Acid21 GmbH
 
-![Acid21 GmbH Logo](https://path-to-acid21-logo.png)
+![Acid21 GmbH Logo](https://acid21.com/theme/018dd510be8370458e3161f07bb819c7/assets/acid21_logo.svg?1725275479)
 
 Acid21 GmbH has been instrumental in supporting the development of this template. We appreciate their commitment to open-source projects and the React Native community.
 
