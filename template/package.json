@@ -10,7 +10,8 @@
     "test": "jest",
     "version": "echo $npm_package_version",
     "aversion": "npx react-native-version --never-amend",
-    "icon": "npx app-icon generate"
+    "icon": "npx app-icon generate",
+    "splash": "npx react-native generate-bootsplash icon.png --platforms=android,ios"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^4.6.4",
